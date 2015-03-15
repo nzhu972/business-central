@@ -12,7 +12,7 @@
         <artifactId>jboss-as-maven-plugin</artifactId>
         <version>7.6.Final</version>
         <configuration>
-           <fileName>business-central.war</fileName>
+           <filename>business-central.war</filename>
            <targetDir>.</targetDir>
         </configuration>
 	</plugin>
