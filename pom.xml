@@ -5,7 +5,7 @@
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <properties>
-     <jboss.remote.host>localhost</jboss.remote.host>
+     <remote.host>localhost</remote.host>
   </properties>
   <build>
   <plugins>
@@ -16,7 +16,7 @@
         <configuration>
            <filename>business-central.war</filename>
            <targetDir>.</targetDir>
-		   <hostname>${jboss.remote.host}</hostname>
+		   <hostname>${remote.host}</hostname>
         </configuration>
 	</plugin>
 	<plugin>
