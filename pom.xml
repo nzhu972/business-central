@@ -4,7 +4,9 @@
   <artifactId>business-central</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-
+  <property>
+     <jboss.remote.host>localhost</jboss.remote.host>
+  </property>
   <build>
   <plugins>
 	<plugin>
@@ -14,6 +16,7 @@
         <configuration>
            <filename>business-central.war</filename>
            <targetDir>.</targetDir>
+		   <hostname>${jboss.remote.host}</hostname>
         </configuration>
 	</plugin>
 	<plugin>
